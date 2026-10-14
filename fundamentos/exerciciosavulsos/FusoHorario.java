@@ -1,6 +1,7 @@
+package fundamentos.exerciciosavulsos;
 import java.util.Scanner;
 
-public class TreinoJava02 {
+public class FusoHorario {
     public static void main(String[] args) {
        
         Scanner sc = new Scanner(System.in);

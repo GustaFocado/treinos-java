@@ -1,6 +1,7 @@
+package fundamentos.exerciciosavulsos;
 import java.util.Scanner;
 
-public class TreinoJava03 {
+public class AreaTriangulo{
     public static void main(String[] args) {
         
         Scanner sc = new Scanner(System.in);

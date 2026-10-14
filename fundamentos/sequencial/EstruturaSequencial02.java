@@ -1,3 +1,4 @@
+package fundamentos.sequencial;
 import java.util.Scanner;
 
 public class EstruturaSequencial02 {
