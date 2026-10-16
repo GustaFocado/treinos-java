@@ -31,6 +31,7 @@ public class Program {
            account = new Account(accountNumber, name, initialDeposit);
 
 } else {
+    
     account = new Account(accountNumber, name);
 }
 
@@ -39,7 +40,46 @@ public class Program {
         System.out.println("Account number: " + account.getAccountNumber());
         System.out.println("balance: " + account.getBalance());
 
+        int option;
+
+do {
+    System.out.println();
+    System.out.println("1 - Deposit");
+    System.out.println("2 - Withdraw");
+    System.out.println("3 - Exit");
+
+    option = sc.nextInt();
+
+    if (option == 1) {
+        System.out.print("Enter deposit amount: ");
+        double amount = sc.nextDouble();
+
+        account.deposit(amount);
+
+        System.out.println("Updated balance: " + account.getBalance());
+
+    } else if (option == 2) {
+        System.out.print("Enter withdraw amount: ");
+        double amount = sc.nextDouble();
+
+        account.withdraw(amount);
+
+        System.out.println("Updated balance: " + account.getBalance());
+
+    } else if (option == 3) {
+        System.out.println("Closing account menu...");
+    } else {
+        System.out.println("Invalid option.");
     }
+
+} while (option != 3);
+
+sc.close();
+    }
+
+    
+
+    
 
 
 
