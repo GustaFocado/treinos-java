@@ -19,6 +19,10 @@ public class Account {
         this.holder = holder;
         this.balance = 0.0; // saldo inicial é zero
     }
+     
+    public void withdraw(double amount) {
+    balance -= amount + 5.0;
+}
 
     public  int getAccountNumber() {
         return accountNumber;
